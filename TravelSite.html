@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the world</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+        }
+        .pg1, .pg2, .pg3, .pg5, .pg6{
+            height: 100vh;
+            width: 100%;
+        }
+        .pg4{
+            height: 100vh;
+            width: 200vw;
+            font-family: "Playwrite GB S", cursive;
+            display: flex;
+            overflow-x: hidden;
+        }
+        .pg1 {
+            font-size: 100px;
+            font-weight: 900;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            left: 75%;
+            background-image: url('https://images.pexels.com/photos/1149243/pexels-photo-1149243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-blend-mode: overlay;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .travel{
+            display: inline-block;
+        }
+        .letter{
+            display: inline-block;
+        }
+        .pg2 {
+            font-family: "Satisfy", cursive;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 6vw;
+            font-weight: 900;
+            height: 100vh;
+            white-space: nowrap;
+            /* overflow-x: auto; */
+            text-align: center;
+            background-color: #ff8c00;
+            padding-left: 80px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        .pg3 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .pg3 img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+            position: absolute;
+        }
+        .pg3 h3, .pg3 h2 {
+            text-align: center;
+            opacity: 1;
+            z-index: 1;
+            position: relative;
+            margin: 0;
+            font-family: "Ga Maamli", sans-serif;
+        }
+        .pg3 h3 {
+            font-size: 50px;
+        }
+        .pg3 h2 {
+            font-size: 100px;
+        }
+        .pg4 .s1, .s2, .s3, .s4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            padding-top: 90px;
+            width: 5000px;
+            padding-left: 10px;
+        }
+        .pg4 .s1 img{
+            height: 70vh;
+            width: 20vw;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px orangered;
+        }
+        .pg4 .s2 img{
+            height: 70vh;
+            width: 20vw;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px skyblue;
+        }
+        .pg4 .s3 img{
+            height: 70vh;
+            width: 20vw;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px bisque;
+        }
+        .pg4 .s4 img{
+            height: 70vh;
+            width: 20vw;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px bisque;
+        }
+        .pg5{
+            position: relative;
+            display: flex;
+            text-align: center;
+        }
+        .pg5 h2{
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 60px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+        }
+        .pg5 .square1{
+            height: 100px;
+            width: 100px;
+            background-color: transparent;
+            border: 0.5px solid white;
+            border-radius: 10px;
+            position: absolute;
+            left: 100px;
+        }
+        .pg5 .square2{
+            position: absolute;
+            bottom: 48px;
+            right: 180px;
+            height: 100px;
+            width: 100px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+        .pg6{
+            position: relative;
+            display: flex;
+            text-align: center;
+        }
+        .pg6 h2{
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 70px;
+            font-family: "Dancing Script", sans-serif;
+            font-weight: 500;
+        }
+        svg {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pg7{
+            height: 10vh;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pg1">
+        <h1>TRAVEL...</h1>
+    </div>
+    <div class="pg2">
+        <h2>broaden your HORIZONS, explore the unknown, and embrace ADVENTURES...</h2>
+    </div>
+    <div class="pg3">
+        <img src="https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="worldmap">
+        <h3>Compass set. World awaits.</h3>
+        <br>
+        <h2>'Explore your way!'</h2>
+    </div>
+    <div class="pg4">
+        <div class="s1">
+            <div class="beach">
+                <img src="https://images.pexels.com/photos/67566/palm-tree-palm-ocean-summer-67566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="beach">
+            </div>
+            <div class="beachinfo">
+                <ul>
+                    <li>Radhanagar, Andaman and Nicobar Islands, India</li>
+                    <li>Eagle Beach, Aruba, Caribbean</li>
+                    <li>Grace Bay Beach, Turks and Caicos Islands</li>
+                    <li>La Concha, Spain</li>
+                </ul>
+            </div>
+        </div>
+        <div class="s2">
+            <div class="mountimg">
+                <img src="https://images.pexels.com/photos/1374064/pexels-photo-1374064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mountain">
+            </div>
+            <div class="mountinfo">
+                <ul>
+                    <li>Mount Everest, India</li>
+                    <li>Matterhorn, Switzerland</li>
+                    <li>Mount Kilimanjaro, Tanzania</li>
+                    <li>Mount Fuji, Japan</li>
+                </ul>
+            </div>
+        </div>
+        <div class="s3">
+            <div class="wfimg">
+                <img src="https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="waterfall">
+            </div>
+            <div class="wfinfo">
+                <ul>
+                    <li>Iguazu Falls in Argentina and Brazil</li>
+                    <li>Angel Falls in Venezuela</li>
+                    <li>Kunchikal Waterfalls, India</li>
+                    <li>Victoria Falls, Zambia and Zimbabwe</li>
+                </ul>
+            </div>
+        </div>
+        <div class="s4">
+            <div class="tfimg">
+                <img src="https://images.pexels.com/photos/1735675/pexels-photo-1735675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="tropical forest">
+            </div>
+            <div class="tfinfo">
+                <ul>
+                    <li>The Amazon Rainforest</li>
+                    <li>The Dehing Patkai</li>
+                    <li>The South Western Ghats</li>
+                    <li>The Atlantic Forest</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pg5">
+        <div class="square1"></div>
+        <h2>“The journey never truly ends. There’s always another adventure, another challenge, another path to explore.<br>Keep moving forward!”</h2>
+        <div class="square2"></div>
+    </div>
+    <div class="string">
+        <svg width="100vw" height="40vh">
+            <path d="M 10 100 Q 700 100 1350 100" stroke="white" fill="transparent" stroke-width="2"/>
+        </svg>                
+    </div>
+    <div class="pg6">
+        <h2>"Life is a journey, not a destination. Embrace each step with curiosity and wonder, as the paths we take shape our soul..."</h2>
+    </div>
+    <div class="pg7"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var h1Element = document.querySelector(".pg1 h1");
+        var h1Text = h1Element.textContent;
+        var split = h1Text.split("");
+        var clutter = "";
+        split.forEach(function(elem){
+            clutter += `<span>${elem}</span>`;
+        });
+        h1Element.innerHTML = clutter;
+
+        var spans = document.querySelectorAll(".pg1 h1 span");
+        var middleIndex = Math.floor(spans.length / 2);
+
+        spans.forEach((span, index) => {
+            var offset = (index - middleIndex) * 20; 
+            gsap.from(span, {
+                y: offset,
+                opacity: 0,
+                duration: 2,
+                scale:0,
+                delay: index * 0.2
+            });
+        });
+        gsap.to(".pg2 h2", {
+            transform: "translate(-65%)",
+            scrollTrigger: {
+                trigger: ".pg2",
+                scroller: "body",
+                start: "top 0%",
+                end: "top -100%",
+                scrub: 1,
+                pin: true
+            }
+        });
+        gsap.from(".pg3 h3", {
+            x: 1000,
+            opacity: 0,
+            scale: 0,
+            delay: 1,
+            duration: 2,
+            scrollTrigger: {
+                trigger: "pg3 h3",
+                scroller: "body",
+                scrub: 3
+            }
+        })
+        gsap.from(".pg3 h2", {
+            x: -1000,
+            opacity: 0,
+            scale: 0,
+            delay: 1,
+            duration: 2,
+            scrollTrigger: {
+                // start:"top 0%",
+                trigger: "pg3 h3",
+                scroller: "body",
+                scrub: 3
+            }
+        })
+        gsap.from(".pg4",{
+            transform: "translate(-50%)",
+            duration:1,
+            delay:0.5, 
+            scrollTrigger:{
+                trigger:".pg4",
+                scroller:"body",
+                start: "top 0%",
+                end: "top -100%",
+                scrub: 2,
+                pin: true
+            }
+        })
+        gsap.to(".pg5 .square1",{
+            y:150,
+            rotate:360,
+            scrollTrigger:{
+                trigger:".pg5 .square1",
+                scrub:2
+            }
+        })
+        gsap.to(".pg5 .square2",{
+            y:-130,
+            x:-180,
+            rotate:-360,
+            scrollTrigger:{
+                trigger:".pg5 .square1",
+                scrub:2
+            }
+        })
+        gsap.from(".pg6 h2",{
+            y:20,
+            opacity:0,
+            scale:0,
+            color:"#2ecc71",
+            duration:1.5,
+            scrollTrigger:{
+                trigger:".pg6 h2",
+                scroller:"body",
+                scrub:2
+            }
+        })
+        var initialPath = `M 10 100 Q 700 100 1350 100`
+        var finalPath = `M 10 100 Q 700 100 1350 100`
+        var string = document.querySelector(".string")
+        string.addEventListener("mousemove",function(dets){
+            path = `M 10 100 Q ${dets.x} ${dets.y} 1350 100`
+            gsap.to("svg path",{
+                attr: {d:path},
+                duration: 0.2,
+                ease:"power3.out"
+            })
+        })
+        string.addEventListener("mouseleave",function(){
+            gsap.to("svg path",{
+                attr:{d:finalPath},
+                duration:1.5,
+                ease:"elastic.out(1,0.2)"
+            })
+        })
+    </script>
+</body>
+</html>
